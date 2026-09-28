@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Encuesta - Ídolos de Boca</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <h1 id="title">Encuesta: ¿Cuál es tu ídolo de Boca?</h1>
+  <p id="description">Ayúdanos a conocer quién es el máximo ídolo de los hinchas xeneizes.</p>
+  <form id="survey-form">
+    <label id="name-label" for="name">Nombre:</label>
+    <input id="name" type="text" placeholder="Ingresa tu nombre" required>
+    <label id="email-label" for="email">Correo electrónico:</label>
+    <input id="email" type="email" placeholder="Ingresa tu correo" required>
+
+    <label id="number-label" for="number">Edad (opcional):</label>
+    <input id="number" type="number" min="10" max="99" placeholder="Edad">
+    <label for="dropdown">¿Cuál es tu ídolo?</label>
+    <select id="dropdown">
+      <option value="">Selecciona una opción</option>
+      <option value="riquelme">Juan Román Riquelme</option>
+      <option value="maradona">Diego Maradona</option>
+      <option value="palermo">Martín Palermo</option>
+      <option value="tevez">Carlos Tevez</option>
+      <option value="tevez">Leandro Paredes</option>
+    </select>
+    <p>¿Sos socio del club?</p>
+    <label><input type="radio" name="socio" value="si" checked> Sí</label>
+    <label><input type="radio" name="socio" value="no"> No</label>
+
+    <p>¿Qué te gustaría mejorar del club?</p>
+    <label><input type="checkbox" value="estadio"> El estadio</label>
+    <label><input type="checkbox" value="plantel"> El plantel</label>
+    <label><input type="checkbox" value="cantera"> La cantera</label>
+    <p>Comentarios adicionales:</p>
+    <textarea placeholder="Escribe tu comentario..."></textarea>
+    <button id="submit" type="submit">Enviar</button>
+  </form>
+</body>
+</html>
